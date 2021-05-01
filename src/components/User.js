@@ -15,10 +15,9 @@ const useStyles = makeStyles((theme) => ({
 const User = ({ login, avatar, followers, following, url }) => {
     
     const classes = useStyles();
-    
     return (
         <CardContent>
-            <Grid container >
+            <Grid container justify="center">
                 <Grid item xs={3}>
                     <Link href={url} target="_blank" rel="noopener">{login}</Link>
                     <Typography variant="h6" gutterBottom></Typography>
